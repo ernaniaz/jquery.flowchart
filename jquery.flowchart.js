@@ -515,7 +515,7 @@ jQuery(function ($) {
         _getOperatorFullElement: function (operatorData) {
             var infos = this.getOperatorCompleteData(operatorData);
 
-            var $operator = $('<div class="flowchart-operator"></div>');
+            var $operator = $('<div class="flowchart-operator' + (this.options.verticalConnection ? ' flowchart-vertical' : '') + '"></div>');
             $operator.addClass(infos.class);
 
             var $operator_title = $('<div class="flowchart-operator-title"></div>');
